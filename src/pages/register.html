@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/src/style/base.css">
+    <link rel="stylesheet" href="/src/style/register_style.css">
+    <link rel="shortcut icon" href="/src/img/icons8-banco-de-dados-96.png" type="image/.png">
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <img src="/src/img/Mobile login-amico.svg" alt="Pessoa fazendo login">
+        </aside>
+        <article>
+            <div class="title">
+                <h1>Criar uma conta</h1>
+                <p>Você já possui uma conta? <a href="login.html">Entrar</a></p>
+            </div>
+            <form autocomplete="off" id="form_control">
+                <input type="text" placeholder="Nome" maxlength="40" id="nome" required>
+                <input type="text" placeholder="Sobrenome" maxlength="40" id="sobrenome" required>
+                <input type="email" placeholder="Email" maxlength="70" id="email" required>
+                <input type="password" placeholder="Coloque sua senha" id="senha" maxlength="50" required>
+                <input type="password" placeholder="Confirme sua senha" id="confirmasenha" maxlength="50" required>
+                <button type="submit" id="button_register">ENVIAR</button>
+            </form>
+        </article>
+    </div>
+</body>
+
+<script src="/src/script/register_script.js"></script>
+
+</html>

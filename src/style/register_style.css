@@ -1,0 +1,44 @@
+aside img {
+    height: 90%;
+    width: 90%;
+    padding: 2em;
+    animation: bounce 5s infinite ease-in-out;
+}
+
+article .title {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#form_control {
+    height: 70%;
+    width: 100%;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+#form_control input {
+    height: 8%;
+    width: 75%;
+    border: none;
+    border-radius: 5px;
+}
+
+#form_control :not(button)  {
+    background-color: var(--black-main);
+    color: var(--yellow-main);
+    filter: contrast(95%);
+    padding: 1em;
+}
+
+#form_control button {
+    margin-top: 2em;
+}
+
+.erro-field {
+    border: 2px solid var(--red-main) !important;
+}

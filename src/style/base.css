@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --black-main: #050517;
+    --white-main: #f0efeb;
+    --purple-main: #9d4edd;
+    --yellow-main: #f9c74f;
+    --red-main: #da4453;
+}
+
+.container,aside,article .title, form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--black-main);
+    color: var(--white-main);
+}
+
+aside {
+    height: 100%;
+    width: 50%;
+}
+
+aside img {
+    height: 90%;
+    width: 90%;
+    padding: 2em;
+    animation: bounce 5s infinite ease-in-out;
+}
+
+article {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    gap: 2em;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+a {
+    all: unset;
+    color: var(--yellow-main);
+    cursor: pointer;
+}
+
+input, button {
+    height: 10%;
+    width: 75%;
+    background-color: var(--black-main);
+    color: var(--yellow-main);
+    border: none;
+    border-radius: 5px;
+    filter: contrast(95%);
+    padding: 1em;
+}
+
+form button {
+    background-color: var(--purple-main);
+    color: var(--white-main);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 150ms ease-in-out;
+}
+
+button:hover, a:hover {
+    filter: brightness(110%);
+}
+
+button:hover {
+    box-shadow: 0px 0px 4px #9d4edd;
+}
+
+form button:active{
+    transform: scale(0.95);
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(5vh);
+    }
+
+    50% {
+        transform: translateY(0vh);
+    }
+
+    100% {
+        transform: translateY(5vh);
+    }
+}
+
+@media (max-width: 56em) and (max-height: 80em)  {
+    aside {
+        display: none;
+    }
+
+    article {
+        width: 100%;
+    }
+}

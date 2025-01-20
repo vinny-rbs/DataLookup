@@ -1,0 +1,33 @@
+article .title {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+article {
+    justify-content: space-around;
+}
+
+#control {
+    height: 60%;
+    width: 100%;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+#control button {
+    margin-top: 2em;
+}
+
+input {
+    height: 10%;
+}
+
+aside img {
+    height: 75%;
+    width: 75%;
+    animation: bounce 5s ease-in-out infinite;
+}
